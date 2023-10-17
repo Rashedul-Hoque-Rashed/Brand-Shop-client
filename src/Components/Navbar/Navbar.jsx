@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import logo from "../../assets/Images/logo.jpg"
 
 const Navbar = () => {
 
@@ -42,7 +43,10 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <div className="flex items-center gap-2">
+                    <img className="h-10 md:h-14 w-10 md:w-14 rounded-full" src={logo} alt="" />
+                <p className="text-xl md:text-2xl font-bold font-serif">Glamour</p>
+                </div>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu-horizontal gap-6 font-semibold px-1">
