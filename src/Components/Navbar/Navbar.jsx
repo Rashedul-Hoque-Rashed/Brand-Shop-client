@@ -45,7 +45,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex items-center gap-2">
                     <img className="h-10 md:h-14 w-10 md:w-14 rounded-full" src={logo} alt="" />
-                <p className="text-xl md:text-2xl font-bold font-serif">Glamour</p>
+                <p className="text-xl md:text-2xl font-bold font-serif text-stone-700">Glamour</p>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -56,7 +56,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link className="btn normal-case px-6 text-white bg-pink-500 hover:bg-pink-600">Login</Link>
+                <Link to="/login" className="btn normal-case px-6 text-white bg-pink-500 hover:bg-pink-600">Login</Link>
             </div>
         </div>
         </div>
