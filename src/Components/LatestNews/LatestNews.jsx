@@ -41,7 +41,7 @@ const LatestNews = () => {
 
 
                 <Swiper
-                className="shadow-xl"
+                className="shadow-xl rounded-lg"
                     modules={[Navigation]}
                     spaceBetween={20}
                     slidesPerView={1}
@@ -67,7 +67,7 @@ const LatestNews = () => {
                     {newses.map(news => (
                         <SwiperSlide key={news.id}>
                             <div>
-                                <img className='w-full mx-auto rounded-lg' src={news.news_img} alt="" />
+                                <img className='w-full mx-auto rounded-t-lg' src={news.news_img} alt="" />
                                 <h3 className='text-2xl font-bold text-center mt-8'>{news.news_title}</h3>
                                 <p className='text-center text-sm mt-2 font-sans font-medium'>{news.date}</p>
                                 <p className='px-2 md:px-6 lg:px-10 mt-4 text-center mb-8'>
