@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <img className="h-10 md:h-14 w-10 md:w-14 rounded-full mx-auto" src={logo} alt="" />
-                        <p className="text-xl md:text-2xl font-bold font-serif text-stone-700 my-3 text-center dark:text-stone-200">Glamour</p>
+                        <p className="text-xl md:text-2xl font-bold font-serif text-stone-500 my-3 text-center ">Glamour</p>
                         <div className="flex items-center justify-center gap-3">
                             <FaFacebook className='w-6 h-6' />
                             <FaInstagram className='w-6 h-6' />
