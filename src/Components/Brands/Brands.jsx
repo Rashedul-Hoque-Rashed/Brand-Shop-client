@@ -12,7 +12,7 @@ const Brands = () => {
     }, [])
 
     return (
-        <div className="container mx-auto px-2 md:px-6 my-12 md:my-24">
+        <div className="container mx-auto px-2 md:px-6 my-12 md:my-28">
             <h4 className="text-2xl md:text-4xl text-center font-bold font-serif text-stone-500 mb-10">Products Brand</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {
