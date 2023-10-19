@@ -16,7 +16,7 @@ const Brands = () => {
             <h4 className="text-2xl md:text-4xl text-center font-bold font-serif text-stone-500 mb-10">Products Brand</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {
-                    brands.map(brand => <Link to={`/categories/${brand.brand_name}`} key={brand.id} className="border rounded-lg p-4 shadow-xl">
+                    brands.map(brand => <Link to={`/products/${brand.brand_name}`} key={brand.id} className="border rounded-lg p-4 shadow-xl">
                         <div className="w-full h-40 mx-auto bg-stone-200 rounded-xl">
                         <img className="p-4 h-36 mx-auto" src={brand.brand_img} alt="" />
                         </div>
