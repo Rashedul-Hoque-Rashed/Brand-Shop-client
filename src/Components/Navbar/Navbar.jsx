@@ -67,7 +67,7 @@ const Navbar = () => {
             Add Products
         </NavLink></li>
         <li><NavLink
-            to="/cart"
+            to={`/cart/${user?.metadata.createdAt}`}
             className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "underline text-pink-500 font-bold" : ""
             }

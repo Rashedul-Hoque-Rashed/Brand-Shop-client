@@ -1,46 +1,53 @@
+import { useContext } from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { BsArrowLeft, BsCartPlus } from "react-icons/bs";
 import Rating from "react-rating";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Details = () => {
 
+    const { user } = useContext(AuthContext);
     const Navigate = useNavigate();
+
     const details = useLoaderData();
-    const {name, brandName, type, descriptions, price, rating, photo } = details;
-    const cart = { name, brandName, type, descriptions, price, rating, photo }
+    const { name, brandName, type, descriptions, price, rating, photo } = details;
+    const { metadata } = user;
+    const {createdAt} = metadata
+    console.log(createdAt)
+    const cart = { createdAt , name, brandName, type, descriptions, price, rating, photo }
 
     const handelCart = () => {
-        fetch(`http://localhost:5000/cart`,{
+        fetch(`https://brand-shop-server-l4dzthp9i-rashedul-hoques-projects.vercel.app/cart`, {
             method: "POST",
-            headers:{
+            headers: {
                 "content-type": "application/json"
             },
             body: JSON.stringify(cart)
         })
-        .then(res=>res.json())
-        .then(data=> {
-            console.log(data)
-                        if (data.insertedId) {
-                            Swal.fire({
-                                position: 'center',
-                                icon: 'success',
-                                title: 'Add to cart successfully',
-                                showConfirmButton: false,
-                                timer: 1500
-                            })
-                        }
-                        else{
-                            Swal.fire({
-                                position: 'center',
-                                icon: 'error',
-                                title: 'This product is already add to cart',
-                                showConfirmButton: false,
-                                timer: 1500
-                            })
-                        }
-        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                if (data.insertedId) {
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Add to cart successfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                }
+                else {
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'error',
+                        title: 'This product is already add to cart',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                }
+            })
     }
 
 

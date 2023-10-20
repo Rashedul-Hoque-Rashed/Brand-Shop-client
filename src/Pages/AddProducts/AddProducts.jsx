@@ -15,7 +15,7 @@ const AddProducts = () => {
 
         const addProducts =  {name, brandName, type, description, price, rating, photo}
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://brand-shop-server-l4dzthp9i-rashedul-hoques-projects.vercel.app/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
