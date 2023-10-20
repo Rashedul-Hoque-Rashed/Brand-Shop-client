@@ -43,7 +43,7 @@ const AddProducts = () => {
     return (
         <div className="container mx-auto px-2 md:px-6 my-12 md:my-24">
             <h4 className="text-2xl md:text-4xl text-center font-bold font-serif text-stone-500 mb-10">Add Your Products</h4>
-            <form onSubmit={handelAdd} className="w-2/3 mx-auto">
+            <form onSubmit={handelAdd} className="md:w-4/5 lg:w-2/3 mx-auto">
                 <div className="flex flex-col md:flex-row gap-4">
                     <div className="flex-1">
                         <label htmlFor="name" className="block mb-2 text-sm font-medium text-slate-500 ">Name</label>
@@ -51,7 +51,15 @@ const AddProducts = () => {
                     </div>
                     <div className="flex-1">
                         <label htmlFor="brandName" className="block mb-2 text-sm font-medium text-slate-500 ">Brand Name</label>
-                        <input type="text" name="brandName" id="brandName" className="bg-gray-50 border border-gray-300 text-slate-500 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Brands Name" required />
+                        <select className='bg-gray-50 border border-gray-300 text-slate-500 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500' name="brandName"   id="brandName" required>
+                            <option value="">Select Brand</option>
+                            <option value="Urban Decay">Urban Decay</option>
+                            <option value="Revlon">Revlon</option>
+                            <option value="Avon">Avon</option>
+                            <option value="Coty">Coty</option>
+                            <option value="Dior">Dior</option>
+                            <option value="Chanel">Chanel</option>
+                        </select>
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row gap-4 my-4">
@@ -67,7 +75,7 @@ const AddProducts = () => {
                 <div className="flex flex-col md:flex-row gap-4 my-4">
                     <div className="flex-1">
                         <label htmlFor="price" className="block mb-2 text-sm font-medium text-slate-500 ">Price</label>
-                        <input type="text" name="price" id="price" className="bg-gray-50 border border-gray-300 text-slate-500 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="price" required />
+                        <input type="text" name="price" id="price" className="bg-gray-50 border border-gray-300 text-slate-500 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Price" required />
                     </div>
                     <div className="flex-1">
                         <label htmlFor="rating" className="block mb-2 text-sm font-medium text-slate-500 ">Rating</label>

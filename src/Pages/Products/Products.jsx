@@ -7,7 +7,6 @@ const Products = () => {
 
 
     const products = useLoaderData();
-    console.log(products)
 
     return (
         <div className="container mx-auto px-2 md:px-6 my-12 md:my-28">
@@ -36,8 +35,8 @@ const Products = () => {
                                         </div>
                                         <h4 className="my-4 text-slate-500 text-lg font-semibold font-sans"><span className="font-bold text-xl">Price:</span> {product.price}$</h4>
                                         <div className="flex font-sans items-center gap-2">
-                                            <Link to={`/details/${product._id}`} className="btn font-sans normal-case px-4 md:px-6 text-white bg-pink-500 hover:bg-pink-600 font-sans">Details</Link>
-                                            <Link to={`/update/${product._id}`} className="btn font-sans normal-case px-4 md:px-6 text-white bg-blue-500 hover:bg-blue-600 font-sans">Update</Link>
+                                            <Link to={`/details/${product._id}`} className="btn font-sans normal-case px-4 md:px-6 text-white bg-pink-500 hover:bg-pink-600">Details</Link>
+                                            <Link to={`/update/${product._id}`} className="btn font-sans normal-case px-4 md:px-6 text-white bg-blue-500 hover:bg-blue-600">Update</Link>
                                         </div>
                                     </div>
                                 </div>
