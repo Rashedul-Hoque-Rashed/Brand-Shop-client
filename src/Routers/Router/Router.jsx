@@ -29,22 +29,22 @@ export const router = createBrowserRouter([
       {
         path: "/products/:brand_name",
         element: <Products />,
-        loader: ({ params }) => fetch(`https://brand-shop-server-l4dzthp9i-rashedul-hoques-projects.vercel.app/products/${params.brand_name}`)
+        loader: ({ params }) => fetch(`https://brand-shop-server-88o8qlee8-rashedul-hoques-projects.vercel.app/products/${params.brand_name}`)
       },
       {
         path: "/details/:id",
         element: <PrivateRouter><Details /></PrivateRouter>,
-        loader: ({ params }) => fetch(`https://brand-shop-server-l4dzthp9i-rashedul-hoques-projects.vercel.app/details/${params.id}`)
+        loader: ({ params }) => fetch(`https://brand-shop-server-88o8qlee8-rashedul-hoques-projects.vercel.app/details/${params.id}`)
       },
       {
         path: "/cart/:createdAt",
         element: <PrivateRouter><Cart /></PrivateRouter>,
-        loader: ({params}) => fetch(`https://brand-shop-server-l4dzthp9i-rashedul-hoques-projects.vercel.app/cart/${params.createdAt}`)
+        loader: ({params}) => fetch(`https://brand-shop-server-88o8qlee8-rashedul-hoques-projects.vercel.app/cart/${params.createdAt}`)
       },
       {
         path: "/update/:id",
         element: <PrivateRouter><Update/></PrivateRouter>,
-        loader: ({params}) => fetch(`https://brand-shop-server-l4dzthp9i-rashedul-hoques-projects.vercel.app/update/${params.id}`)
+        loader: ({params}) => fetch(`https://brand-shop-server-88o8qlee8-rashedul-hoques-projects.vercel.app/update/${params.id}`)
       },
       {
         path: "/login",

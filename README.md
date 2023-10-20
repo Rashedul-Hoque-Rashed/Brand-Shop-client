@@ -1,8 +1,18 @@
-# React + Vite
+# Glamour Brand Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live link
 
-Currently, two official plugins are available:
+click here for the live link: https://brand-shop-75512.web.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Features and functionalities
+
+- There was a marquee under the banner. It's show always daily updated and offers.
+
+- Then there was some brands name. If you click the brand name or logo, you will see this brand products.
+
+- In every brand products has two buttons one details button and another one update button. If you don't login our website then you don't get inside in this two buttons.
+
+- When you login our website then if you click the details button, you will the products details and there was a add to cart button. You will add this products in your cart through the add to cart button.
+
+-If you click the update button then you will change the products details(name, brand name, type, description, price, rating and photo).  

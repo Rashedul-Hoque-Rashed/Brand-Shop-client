@@ -19,7 +19,7 @@ const Details = () => {
     const cart = { createdAt , name, brandName, type, descriptions, price, rating, photo }
 
     const handelCart = () => {
-        fetch(`https://brand-shop-server-l4dzthp9i-rashedul-hoques-projects.vercel.app/cart`, {
+        fetch(`https://brand-shop-server-88o8qlee8-rashedul-hoques-projects.vercel.app/cart`, {
             method: "POST",
             headers: {
                 "content-type": "application/json"
